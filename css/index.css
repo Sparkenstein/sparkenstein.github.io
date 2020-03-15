@@ -5,6 +5,6 @@
 @tailwind utilities;
 
 #sidebar {
-    background: rgb(255,140,48);
-    background: linear-gradient(173deg, rgba(255,140,48,1) 0%, rgba(226,53,46,1) 100%); 
+    background: rgb(238,117,58);
+    background: linear-gradient(168deg, rgba(238,117,58,1) 0%, rgba(237,51,44,1) 100%); 
 }
