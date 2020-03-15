@@ -1,0 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+#sidebar {
+    background: rgb(255,140,48);
+    background: linear-gradient(173deg, rgba(255,140,48,1) 0%, rgba(226,53,46,1) 100%); 
+}

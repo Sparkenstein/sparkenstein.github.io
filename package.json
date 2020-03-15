@@ -1,0 +1,15 @@
+{
+  "name": "prabhanjan.dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "css": "postcss css/index.css -o css/build.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
