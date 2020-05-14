@@ -1,1 +1,3 @@
-sal();
+sal({
+    once: false,
+});
