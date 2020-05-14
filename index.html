@@ -17,7 +17,14 @@
       media="screen"
       href="css/build.css"
     />
-    <script src="js/main.js"></script>
+
+    <link
+      href="https://unpkg.com/sal.js@0.7.5/dist/sal.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/sal.js@0.7.5/dist/sal.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
   <body class="antialiased text-gray-900 bg-gray-200">
     <nav
@@ -52,15 +59,25 @@
         </li>
       </ul>
     </nav>
-    <div class="container ml-64">
+    <div class="container ml-64" id="jsscroll">
       <!-- Preface -->
       <div
-        id="preface"
+        id="about"
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="300"
+        data-sal-easing="ease-out"
         class="flex flex-col justify-center min-h-screen pl-4 leading-tight"
       >
         <div class="uppper uppercase">
           <div id="name" class="tracking-wide font-extrabold">
-            <h1 class="text-6xl uppercase text-gray-800">
+            <h1
+              class="text-6xl uppercase text-gray-800"
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-delay="500"
+              data-sal-easing="ease-out-bounce"
+            >
               Prabhanjan <span class="text-primary-red">Padhye</span>
             </h1>
           </div>
@@ -78,9 +95,54 @@
         </div>
         <div class="lower pt-24">
           <div class="text-gray-700 tracking-wide">
-            Hi, Myself Prabhanjan. I am a full stack NodeJS developer. I have also worked on languages like Python, Java, Go etc.<br>
-            In my free time I try to contribute to Open Source. I am also a technical Speaker/Writer. I am available for Hire or <br>
-            Freelancing or even Open Source work! 
+            Hi, Myself Prabhanjan. I am a full stack NodeJS and Rust developer.
+            I have also worked on languages like Python, Java, Go etc.<br />
+            In my free time I try to contribute to Open Source. I am also a
+            technical Speaker/Writer. I am available for Hire or <br />
+            Freelancing or even Open Source work!
+          </div>
+        </div>
+      </div>
+      <!-- Experience -->
+      <div
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce"
+        id="experience"
+        class="flex flex-col justify-center min-h-screen pl-4 leading-tight"
+      >
+        <div class="uppper uppercase">
+          <div id="name" class="tracking-wide font-extrabold">
+            <h1
+              class="text-6xl uppercase text-gray-800"
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-delay="500"
+              data-sal-easing="ease-out-bounce"
+            >
+              Experience <span class="text-primary-red">Padhye</span>
+            </h1>
+          </div>
+          <div
+            id="myinfo"
+            class="flex text-lg text-gray-700 justify-start tracking-wide"
+          >
+            <div class="pr-2">Full Stack Developer &bull;</div>
+            <div class="pr-2">Bibwewadi, Pune &bull;</div>
+            <div class="pr-2">(+91) 80871 30548 &bull;</div>
+            <div class="font-bold font-mono text-primary-red">
+              prabhanjan@fosslife.com
+            </div>
+          </div>
+        </div>
+        <div class="lower pt-24">
+          <div class="text-gray-700 tracking-wide">
+            Hi, Myself Prabhanjan. I am a full stack NodeJS and Rust developer.
+            I have also worked on languages like Python, Java, Go etc.<br />
+            In my free time I try to contribute to Open Source. I am also a
+            technical Speaker/Writer. I am available for Hire or <br />
+            Freelancing or even Open Source work!
           </div>
         </div>
       </div>
