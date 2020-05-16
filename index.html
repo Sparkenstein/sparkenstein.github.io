@@ -55,21 +55,12 @@
           data-sal-easing="easeInOutQuart"
           class="hover:text-red-300 py-2 text-center"
         >
-          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
         </li>
+
         <li
           data-sal="flip-up"
-          data-sal-duration="2500"
-          data-sal-delay="1500"
-          data-sal-easing="easeInOutQuart"
-          class="hover:text-red-300 py-2 text-center"
-        >
-          <a href="#education">Education</a>
-        </li>
-        <li
-          data-sal="flip-up"
-          data-sal-duration="3000"
-          data-sal-delay="1500"
+          style="--sal-duration: 700ms;"
           data-sal-easing="easeInOutQuart"
           class="hover:text-red-300 py-2 text-center"
         >
@@ -82,7 +73,16 @@
           data-sal-easing="easeInOutQuart"
           class="hover:text-red-300 py-2 text-center"
         >
-          <a href="#interests">Interests</a>
+          <a href="#interests">Experience</a>
+        </li>
+        <li
+          data-sal="flip-up"
+          data-sal-duration="3500"
+          data-sal-delay="1500"
+          data-sal-easing="easeInOutQuart"
+          class="hover:text-red-300 py-2 text-center"
+        >
+          <a href="#interests">Contact</a>
         </li>
         <li
           data-sal="flip-up"
@@ -91,7 +91,16 @@
           data-sal-easing="easeInOutQuart"
           class="hover:text-red-300 py-2 text-center"
         >
-          <a href="#awards">Awards</a>
+          <a href="#awards">Github</a>
+        </li>
+        <li
+          data-sal="flip-up"
+          data-sal-duration="800"
+          data-sal-delay="4000"
+          data-sal-easing="easeInOutQuart"
+          class="hover:text-red-300 py-2 text-center"
+        >
+          <a href="#awards">Blog</a>
         </li>
       </ul>
     </nav>
@@ -105,7 +114,7 @@
         data-sal-easing="ease-out"
         class="flex flex-col justify-center min-h-screen pl-4 leading-tight"
       >
-        <div class="uppper uppercase">
+        <div class="uppercase">
           <div id="name" class="tracking-wide font-extrabold">
             <h1
               class="text-6xl uppercase text-gray-800"
@@ -139,46 +148,90 @@
           </div>
         </div>
       </div>
-      <!-- Experience -->
+      <!-- Projects -->
       <div
         data-sal="fade"
-        data-sal-duration="1200"
-        data-sal-delay="300"
-        data-sal-easing="ease-out-bounce"
-        id="experience"
-        class="flex flex-col justify-center min-h-screen pl-4 leading-tight"
+        style="--sal-duration: 1200ms; --sal-delay: 500ms;"
+        id="projects"
+        class="flex flex-col min-h-screen pl-4 leading-tight"
       >
-        <div class="uppper uppercase">
+        <div class="uppercase">
           <div id="name" class="tracking-wide font-extrabold">
             <h1
               class="text-6xl uppercase text-gray-800"
               data-sal="slide-up"
-              data-sal-duration="1000"
-              data-sal-delay="500"
-              data-sal-easing="ease-out-bounce"
+              style="--sal-duration: 700ms; --sal-delay: 500ms;"
             >
-              Experience <span class="text-primary-red">Padhye</span>
+              Proj<span class="text-primary-red">ects</span>
             </h1>
           </div>
+        </div>
+        <!-- Cards -->
+        <div class="flex items-center justify-center pt-12">
+          <!-- delta -->
           <div
-            id="myinfo"
-            class="flex text-lg text-gray-700 justify-start tracking-wide"
+            data-sal="flip-up"
+            style="--sal-duration: 700ms; --sal-delay: 700ms;"
+            class="max-w-sm rounded overflow-hidden shadow-lg mr-8"
           >
-            <div class="pr-2">Full Stack Developer &bull;</div>
-            <div class="pr-2">Bibwewadi, Pune &bull;</div>
-            <div class="pr-2">(+91) 80871 30548 &bull;</div>
-            <div class="font-bold font-mono text-primary-red">
-              prabhanjan@fosslife.com
+            <img
+              class="w-full"
+              src="img/grambot.png"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-primary-red">Delta</div>
+              <p class="text-gray-700 text-base">
+                Delta is a small URL shortner and file uploader. It has multiple
+                features to make user experience as seamless as possible. It's
+                safe, fast and has both command-line and graphical user
+                interface
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-primary-red mr-2"
+                >#python</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-primary-red mr-2"
+                >#userbot</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-primary-red mr-2"
+                >#telegram</span
+              >
             </div>
           </div>
-        </div>
-        <div class="lower pt-24">
-          <div class="text-gray-700 tracking-wide">
-            Hi, Myself Prabhanjan. I am a full stack NodeJS and Rust developer.
-            I have also worked on languages like Python, Java, Go etc.<br />
-            In my free time I try to contribute to Open Source. I am also a
-            technical Speaker/Writer. I am available for Hire or <br />
-            Freelancing or even Open Source work!
+          <!-- grambot -->
+          <div
+            data-sal="flip-up"
+            style="--sal-duration: 1200ms; --sal-delay: 300ms;"
+            class="max-w-sm rounded overflow-hidden shadow-lg"
+          >
+            <img
+              class="w-full"
+              src="img/logo.png"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-primary-red">Grambot</div>
+              <p class="text-gray-700 text-base">
+                grambot is a user automation bot for telegram. it does a more that 
+                what is sounds it does. It has features from sending funny jokes to
+                scraping google to reminders and todos etc, everything just a command away.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-primary-red mr-2"
+                >#nodejs</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-primary-red mr-2"
+                >#urlshortner</span
+              >
+            </div>
           </div>
         </div>
       </div>
