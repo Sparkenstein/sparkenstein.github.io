@@ -1,3 +1,0 @@
-sal({
-    once: false,
-});
