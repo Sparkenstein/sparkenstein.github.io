@@ -1,0 +1,14 @@
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"); */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
