@@ -3,9 +3,7 @@ import path from "node:path";
 
 export default defineConfig({
     base: "/",
-    build: {
-        minify: false
-    },
+    build: { outDir: "docs" },
     resolve: {
         alias: [
             {
