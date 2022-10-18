@@ -8,6 +8,7 @@ export const term = new Terminal({
     fontFamily: "Ubuntu Mono, monospace",
     letterSpacing: 1,
     fontSize: 20,
+    allowProposedApi: true,
     // theme: {background: "white", foreground: "black", cursor: "black"},
     // theme: {background: "black", foreground: "white", cursor: "white"}
 });

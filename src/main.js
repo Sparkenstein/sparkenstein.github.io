@@ -12,7 +12,7 @@ const PROMPT = `${chalk.green.bold("portfolio@prabhanjan.dev")}:~$ `;
 let theme = "dark"
 
 const darktheme = {
-  background: "#1d1f21", foreground: "#c5c8c6", cursor: "#d8dee9",
+  background: "#1d1f21", foreground: "#c5c8c6", cursor: "#d8dee9", cursorAccent: "#1d1f21",
   black: '#1d1f21',
   red: '#cc342b',
   green: '#198844',
@@ -36,7 +36,7 @@ const darktheme = {
 
 // Light theme:
 const lighttheme = {
-  background: "#ffffff", foreground: "#373b41", cursor: "#373b41",
+  background: "#ffffff", foreground: "#373b41", cursor: "#373b41", cursorAccent: "#ffffff",
 
   black: '#1d1f21',
   red: '#cc342b',
