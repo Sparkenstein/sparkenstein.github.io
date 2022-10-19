@@ -3,6 +3,7 @@ import path from "node:path";
 
 export default defineConfig({
     base: "/",
+    server: { port: 3000 },
     build: { outDir: "docs" },
     resolve: {
         alias: [
