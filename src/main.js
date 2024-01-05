@@ -63,7 +63,7 @@ term.options.theme = { ...darktheme }
 // Start
 let curr = "";
 
-term.writeln(chalk.gray(`# ${chalk.blue("help")} for available sections. this is not a full fledged term. expect some 🐛.`));
+term.writeln(chalk.gray(`# ${chalk.blue("help2")} for available sections. this is not a full fledged term. expect some 🐛.`));
 
 term.prompt = () => {
   if (curr) {
@@ -90,7 +90,6 @@ function writeCommand(content) {
 const history = [];
 
 term.onKey(function (a, b) {
-  // console.log(a)
   curr = curr.trim()
   // Control + C
   if (a.key === "\u0003") {
@@ -169,7 +168,6 @@ term.onKey(function (a, b) {
         default:
           if (curr.startsWith("font")) {
             const size = curr.split("font")[1];
-            console.log(curr, "Size", size)
             term.options.fontSize = size;
             curr = "";
             term.write("\r\n");
@@ -195,7 +193,6 @@ term.onKey(function (a, b) {
   } else {
     curr += a.key;
     term.write(a.key);
-    console.log(curr);
   }
 });
 
