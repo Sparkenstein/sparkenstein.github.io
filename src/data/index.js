@@ -6,25 +6,26 @@ const chalk = new Chalk({ level: 3 });
 
 
 const helpcontent = `
-portfolio - prabhanjan.dev    v0.0.1
-Prabhanjan Padhye  <prabhanjan@fosslife.com>
-portfolio - a unique portfolio made with xterm
 
-${chalk.bold.yellowBright("USAGE")}:
-    just write the command and press enter. no flags required
+  portfolio - prabhanjan.dev    v0.0.1
+  Prabhanjan Padhye ${chalk.dim("@Sparkenstein")} ${chalk.dim("<prabhanjan@fosslife.com>")}
+  portfolio - a unique portfolio made with xterm
 
-${chalk.bold.yellowBright("COMMANDS")}:
-    ${chalk.green("info")}                see basic information and about me.
-    ${chalk.green("skills")}              see skills in programming languages
-    ${chalk.green("tools")}               tools and frameworks
-    ${chalk.green("exp")}                 see works experience
-    ${chalk.green("proj")}                personal projects and github
-    ${chalk.green("social")}              social media links and contact information
-    ${chalk.green("blog")}                blog link
-    ${chalk.green("edu")}                 education, if that matters.
-    ${chalk.green("theme")}               toggle theme
-    ${chalk.green("font [size]")}         set font size - current is 20 (use not recommended, it messes up the ui)
-    ${chalk.green("cls")}                 clear screen. Alias: ${chalk.green("clear")}, ${chalk.green("reset")}
+  ${chalk.bold.yellowBright("USAGE")}:
+      just write the command and press enter. no flags required. ${chalk.green("ctrl + k")} to clear screen.
+
+  ${chalk.bold.yellowBright("COMMANDS")}:
+      ${chalk.green("info")}                see basic information and about me.
+      ${chalk.green("skills")}              see skills in programming languages
+      ${chalk.green("tools")}               tools and frameworks
+      ${chalk.green("exp")}                 see works experience
+      ${chalk.green("proj")}                personal projects and github
+      ${chalk.green("social")}              social media links and contact information
+      ${chalk.green("blog")}                blog link
+      ${chalk.green("edu")}                 education, if that matters.
+      ${chalk.green("theme")}               toggle theme
+      ${chalk.green("font [size]")}         set font size - current is 20 (use not recommended, it messes up the ui)
+      ${chalk.green("cls")}                 clear screen. Alias: ${chalk.green("clear")}, ${chalk.green("reset")}
 `
 
 const educontent = `
@@ -36,15 +37,15 @@ const skillsconetent = `
  ${chalk.dim("languages and runtimes I have worked on")}
  ${chalk.yellow.bold("SKILLS:")} 
  
-    ${chalk.green("javascript")}      Expert           ████████████████████     [5 years]
+    ${chalk.green("javascript")}      Expert           ████████████████████     [6 years]
 
-    ${chalk.green("typescript")}      Expert           ██████████████████░░     [4 years]
+    ${chalk.green("typescript")}      Expert           ██████████████████░░     [5 years]
     
     ${chalk.green("python")}          Intermediate+    ████████████░░░░░░░░     [4 years]
     
-    ${chalk.green("rust")}            Intermediate     ██████████░░░░░░░░░░     [2 years]
+    ${chalk.green("rust")}            Intermediate     ██████████░░░░░░░░░░     [3 years]
     
-    ${chalk.green("node")}            Expert           ████████████████░░░░     [5 years]
+    ${chalk.green("node")}            Expert           ████████████████░░░░     [6 years]
     
     ${chalk.green("deno")}            Expert           ████████████░░░░░░░░     [2 years]
 
@@ -57,9 +58,9 @@ const toolscontent = `
  ${chalk.dim("tools and frameworks I have worked on")}
  ${chalk.yellow.bold("TOOLS AND FRAMEWORKS:")} 
  
-  ${chalk.green("react")}      Expert           ███████████████████░     [5 years]    ${chalk.green.dim("advance hooks, perf, ui libraries etc")}
+  ${chalk.green("react")}      Expert           ███████████████████░     [6 years]    ${chalk.green.dim("advance hooks, perf, ui libraries etc")}
 
-  ${chalk.green("nextjs")}     Advance          ██████████████████░░     [4 years]    ${chalk.green.dim("SSR, CSR, ISG, SSG etc")}
+  ${chalk.green("nextjs")}     Advance          ██████████████████░░     [5 years]    ${chalk.green.dim("SSR, CSR, ISG, SSG etc")}
 
   ${chalk.green("docker")}     Advance          ██████████████░░░░░░     [4 years]    ${chalk.green.dim("container maintainance, logs, balancing, small k8s")}
 
@@ -67,7 +68,7 @@ const toolscontent = `
 
   ${chalk.green("vue")}        Intermediate     █████████░░░░░░░░░░░     [2 years]    ${chalk.green.dim("vue2, mid level projects")}
 
-  ${chalk.green("sys adm")}    Advance          ██████████████░░░░░░     [4 years]    ${chalk.green.dim("nginx, caddy, load balancer, server hardening etc")}
+  ${chalk.green("sys adm")}    Advance          ██████████████░░░░░░     [4 years]    ${chalk.green.dim("self hosting, nginx, caddy, load balancer, server hardening etc")}
 
   ${chalk.green("dev")}        Advance          ████████████████░░░░     [4 years]    ${chalk.green.dim("git, linux, ssh, vim, vscode, cli tools")}
 `
@@ -84,7 +85,10 @@ const expcontent = `
 
       ${chalk.green("Syngenta")}              2019-2021      ${chalk.dim("[1.5 years]")}  Fullstack developer. agritech. owned 4+ products
 
-      ${chalk.green("masaischool")}           2021-present   ${chalk.dim("[1.9 years]")}  EduTech. Senior backend engineer`
+      ${chalk.green("masaischool")}           2021-2022      ${chalk.dim("[1.9 years]")}  EduTech. Senior backend engineer
+      
+      ${chalk.green("BigSpring")}             2022-present   ${chalk.dim("[1 year]")}      Senior full-stack developer. module lead FE.
+`
 
 const projcontent = `
   ${chalk.dim("Major projects I have worked on (open source)")}
@@ -119,24 +123,31 @@ const blogcontent = `
     I do write small time educational blogs on opensource
     visit ${chalk.green.underline("https://fosslife.com")} `
 
+
 const infocontent = `
   ${chalk.yellow.bold("ABOUT ME:")}
+
+    Hey there! I'm a ${chalk.green("Full-Stack")}  Developer with over six+ years under my belt. 
+    My coding journey started off as a freelancer and most of what I know about programming, 
+    I taught myself. Of course, having a Bachelor's in Computer Science does help a bit too.
+
+    I'm super into ${chalk.green("open-source")} stuff. I can chat your ear off about Linux, 
+    Vim, Emacs, docker, cloud, programming languages - you name it. Been playing around with these 
+    even before I kicked off my dev career. I've chipped in on a bunch of 
+    projects like Deno, but what really gets me going is cooking up my own open-source creations.
     
-    I am a ${chalk.green("full-stack")} developer with 5+ years of experience.
-    I started my career as a ${chalk.green("freelancer")}. I am a mostly self-taught programmer
-    even though I have completed bachelors of engineering in computer science.
+    When it comes to tech, I'm all about the Full-Stack ${chalk.green("JS/TS")} scene. 
+    I'm pretty flexible with most frameworks there and I try to use rust for most of my personal projects.
 
-    I am an open-source enthusiat, love to talk on ${chalk.green("linux")} 🐧  and popular open-source tools
-    like ${chalk.green('vim, emacs')}, been using it from a long time, even before I started my career as dev.
-    I have so far contributed to many projects including ${chalk.green("deno")} but I mostly like to develop
-    my own open-source projects.
-
-    I have experience in full-stack ${chalk.green("JS/TS")} ⬡ ecosystem, anything goes (execpt Angular I guess).
-    apart from that, I try to write all my projects in ${chalk.green("Rust")} ⚙ because I love rust.
-
-    I am also a part time ${chalk.green("author/speaker")}. I have experience in talking in large conferences
-    as well as organizing local meet-ups. So far I have organized 10+ local meetups mostly on JS and Rust. 
-    I do also write blogs on ${chalk.green.underline("https://fosslife.com")}`
+    I also self host A LOT OF things, like my own mail server, my own cloud storage, my own git server, etc. 
+    most of which is not public for obvious reasons.
+    
+    Apart from coding, I dabble in ${chalk.green("writing")} and ${chalk.green("speaking")}. 
+    I've done talks at big conferences and organized a fair share of local meetups,
+    mostly chatting about JS and Rust. I've put together more than 10 of these local gatherings. 
+    Also, I blog over at ${chalk.green.underline("https://fosslife.com")}  it's where I spill my thoughts on all things open-source.
+  
+  `
 
 
 export { educontent, helpcontent, skillsconetent, toolscontent, expcontent, projcontent, socialcontent, blogcontent, infocontent }

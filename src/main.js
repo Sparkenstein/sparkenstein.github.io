@@ -63,9 +63,9 @@ term.options.theme = { ...darktheme }
 // Start
 let curr = "";
 
-term.writeln(chalk.gray(`# ${chalk.blue("help2")} for available sections. this is not a full fledged term. expect some 🐛.`));
+term.writeln(chalk.gray(`# ${chalk.blue("help/h")} for available sections. this is not a full fledged term. expect some 🐛.`));
 
-term.prompt = () => {
+const prompt = () => {
   if (curr) {
     term.write(curr);
     term.write(`\r\n\n${PROMPT}`); // output
@@ -75,7 +75,7 @@ term.prompt = () => {
   }
 };
 
-term.prompt();
+prompt();
 
 function writeCommand(content) {
   content.split('\n').forEach((line) => {
@@ -113,6 +113,7 @@ term.onKey(function (a, b) {
       history.push(curr);
       switch (curr.trim()) {
         case "help":
+        case "h":
           writeCommand(helpcontent);
           break;
 
@@ -152,7 +153,7 @@ term.onKey(function (a, b) {
           theme = theme === "dark" ? "light" : "dark";
           curr = "";
           term.write("\r\n");
-          term.prompt()
+          prompt()
           break;
 
 
@@ -162,26 +163,23 @@ term.onKey(function (a, b) {
           curr = "";
           term.reset()
           term.write("\r\n");
-          term.prompt();
+          prompt();
           break;
 
         default:
           if (curr.startsWith("font")) {
             const size = curr.split("font")[1];
-            term.options.fontSize = size;
+            term.options.fontSize = parseInt(size);
             curr = "";
             term.write("\r\n");
-            term.prompt();
+            prompt();
             return
           }
           term.writeln(`\r\nUnknown command ${curr}. type ${chalk.blue("help")} for help\n`);
           curr = "";
-          term.prompt();
+          prompt();
       }
 
-      // entries.push(curr);
-      // term.write("\r\n");
-      // term.prompt();
     }
   } else if (a.key === "\u007f") {
     // Backspace
@@ -196,3 +194,12 @@ term.onKey(function (a, b) {
   }
 });
 
+
+// clear screen on ctrl k
+term.onData((data, e) => {
+  if (data === "\x0b") {
+    curr = "";
+    term.reset()
+    prompt();
+  }
+});
